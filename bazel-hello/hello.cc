@@ -25,7 +25,7 @@ std::string Greet(absl::string_view person) {
   return absl::StrCat("Hello ", person);
 }
 
-std::string zCompress(absl::string_view str_in) {
+std::string zCompress(const std::string& str_in) {
   z_stream defstream;
   defstream.zalloc = Z_NULL;
   defstream.zfree = Z_NULL;

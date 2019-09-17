@@ -56,9 +56,9 @@ std::string zDecompress(absl::string_view str_in) {
 }
 
 TEST(Compressor, Compresses) {
-  absl::string_view hellos =
+  const char hellos[] =
       "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello";
-  EXPECT_EQ(hellos, zDecompress(hello::zCompress(hellos)));
+  EXPECT_EQ(zDecompress(hello::zCompress(hellos)), hellos);
 }
 
 TEST(Compressor, LongString) {
