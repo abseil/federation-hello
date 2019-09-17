@@ -25,4 +25,3 @@ TEST(Greeter, Works) {
 }
 
 }  // namespace
-

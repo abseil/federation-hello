@@ -19,6 +19,6 @@ namespace hello {
 
 std::string Greet(absl::string_view person);
 
-std::string zCompress(std::string str_in );
+std::string zCompress(absl::string_view str_in);
 
 }  // namespace hello
