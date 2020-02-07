@@ -1,3 +1,0 @@
-# Ignore all bazel-* symlinks.
-/bazel-hello/bazel-*
-
